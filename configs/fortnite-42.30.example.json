@@ -1,0 +1,80 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 26064,
+    "auth_token": "auto"
+  },
+  "safety": {
+    "require_confirm": true,
+    "allow_raw_calls": true,
+    "allow_self_unload": true,
+    "undo_patches": true
+  },
+  "game_thread": {
+    "enabled": true,
+    "timeout_ms": 5000,
+    "direct_fallback": false
+  },
+  "ue": {
+    "profile": "fortnite",
+    "auto_tune": true,
+    "static_find_object": {
+      "resolve": "offset",
+      "offset": "0x692FBA",
+      "signature": "",
+      "name_arg": "wstring_view_ptr"
+    },
+    "get_objects_of_class": {
+      "resolve": "offset",
+      "offset": "0x15617B",
+      "signature": ""
+    },
+    "process_event": {
+      "resolve": "offset",
+      "offset": "0x1421F6",
+      "signature": "",
+      "hook": true
+    },
+    "names": {
+      "style": "gnames",
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "fname_size": 8,
+      "abi": "fstring_ref",
+      "max_chars": 1024,
+      "game_thread": false,
+      "validate": true,
+      "pool_offset": "0x1AF4CDC8",
+      "block_table_offset": 8,
+      "block_bits": 16,
+      "stride": 2,
+      "decrypt": "fortnite",
+      "decrypt_key": "0x6F1D17B8"
+    },
+    "objects": {
+      "style": "off"
+    },
+    "gworld": {
+      "resolve": "chain",
+      "from": "gengine",
+      "chain": [2928, 120],
+      "decode": ""
+    },
+    "gengine": {
+      "resolve": "offset",
+      "offset": "0x1B098778",
+      "signature": "",
+      "decode": ""
+    },
+    "extra_globals": {},
+    "layout": {
+      "object_class": 16,
+      "object_outer": 24,
+      "object_name": 32,
+      "ustruct_super": 80,
+      "ustruct_children": 0,
+      "uclass_class_default_object": 256
+    }
+  }
+}

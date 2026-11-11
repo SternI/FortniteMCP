@@ -1,0 +1,107 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 26064,
+    "auth_token": "auto",
+    "max_body_bytes": 4194304,
+    "max_connections": 32,
+    "idle_timeout_ms": 30000
+  },
+  "log": {
+    "level": "info",
+    "max_file_bytes": 4194304,
+    "debug_output": false
+  },
+  "safety": {
+    "max_transfer_bytes": 16777216,
+    "max_read_bytes": 4194304,
+    "max_scan_results": 128,
+    "max_scan_bytes": 536870912,
+    "max_patches": 128,
+    "undo_patches": true,
+    "allow_raw_calls": true,
+    "allow_any_free": false,
+    "allow_self_unload": true,
+    "allow_exec_alloc": true,
+    "require_confirm": true
+  },
+  "game_thread": {
+    "enabled": true,
+    "timeout_ms": 5000,
+    "max_queued": 32,
+    "jobs_per_pump": 8,
+    "pump_budget_us": 1500,
+    "direct_fallback": false
+  },
+  "ue": {
+    "profile": "ue5",
+    "auto_tune": true,
+    "static_find_object": {
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "vtable_index": -1,
+      "name_arg": "wchar_ptr",
+      "hook": false
+    },
+    "get_objects_of_class": {
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "vtable_index": -1,
+      "name_arg": "wchar_ptr",
+      "hook": false
+    },
+    "process_event": {
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "vtable_index": -1,
+      "name_arg": "wchar_ptr",
+      "hook": true
+    },
+    "names": {
+      "style": "off",
+      "resolve": "offset",
+      "offset": 0,
+      "signature": "",
+      "fname_size": 8,
+      "block_table_offset": 16,
+      "block_bits": 16,
+      "stride": 2,
+      "codec": "plain",
+      "abi": "fstring_ref",
+      "max_chars": 2048
+    },
+    "objects": {
+      "style": "off",
+      "resolve": "offset",
+      "offset": 0,
+      "signature": "",
+      "objects_offset": 16,
+      "item_size": 24,
+      "chunk_bits": 16,
+      "item_object_offset": 0,
+      "max_objects": 2000000,
+      "empty_chunk_stop": 4
+    },
+    "gworld": {
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "decode": "",
+      "from": "",
+      "chain": []
+    },
+    "gengine": {
+      "resolve": "off",
+      "offset": 0,
+      "signature": "",
+      "decode": "",
+      "from": "",
+      "chain": []
+    },
+    "extra_globals": {},
+    "layout": {}
+  }
+}
