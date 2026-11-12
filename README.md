@@ -6,6 +6,8 @@ An in-process MCP server for Unreal Engine game research and automated testing.
 that MCP clients and coding agents can use to inspect memory, walk UE reflection, call UFunctions,
 drive keyboard/mouse input, and load helper DLLs.
 
+#### Cool discord server to talk: https://discord.gg/x5NhV5h7BF
+
 > **Authorized use only.** Run this against an offline/private build you own, with anti-cheat disabled.
 > The included loader only targets a game process you started locally; this project contains no
 > anti-cheat bypass, no hardware-ID spoofing, and no remote/network injection. The matchmaking helpers
